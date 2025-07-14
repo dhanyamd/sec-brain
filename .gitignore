@@ -1,2 +1,3 @@
 pyproject.toml
 .env
+.venv

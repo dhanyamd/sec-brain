@@ -1,6 +1,5 @@
 from pathlib import Path
-from logurur import logger
-from zenml import pipeline
+from zenml import pipeline 
 
 from steps.collect_notion_data import (
     extract_notion_documents,

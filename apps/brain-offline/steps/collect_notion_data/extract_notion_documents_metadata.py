@@ -1,4 +1,3 @@
-from loguru import logger
 from typing_extensions import Annotated
 from zenml import get_step_context, step
 
@@ -22,7 +21,7 @@ def extract_notion_documents_metadata(
     client = NotionDatabaseClient()
     documents_metadata = client.query_notion_database(database_id)
 
-    logger.info(
+    print(
         f"Extracted {len(documents_metadata)} documents metadata from {database_id}"
     )
 

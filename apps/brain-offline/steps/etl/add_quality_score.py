@@ -1,7 +1,7 @@
 from typing_extensions import Annotated
 from zenml import get_step_context, step
 
-from second_brain_offline.application.agents.quality import (
+from src.second_brain_offline.application.agents.quality import (
     HeuristicQualityAgent,
     QualityScoreAgent,
 )
@@ -53,7 +53,7 @@ def add_quality_score(documents:list[Document], model_id: str = "gpt-4o-mini", m
     )
     len_documents = len(documents) 
     len_documents_with_scores = len(
-        [doc for doc in scored_documents if doc.content_quality_scire is not None] 
+        [doc for doc in scored_documents if doc.content_quality_score is not None] 
     )
     print(f"Total documents: {len_documents}")
     print(f"Total documents that were scored: {len_documents_with_scores}")

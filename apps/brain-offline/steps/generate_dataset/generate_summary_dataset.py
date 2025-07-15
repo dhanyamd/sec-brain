@@ -1,7 +1,7 @@
 from typing_extensions import Annotated
 from zenml import step
 
-from second_brain_offline.application.dataset import SummarizationDatasetGenerator
+from src.second_brain_offline.application.dataset import SummarizationDatasetGenerator
 from second_brain_offline.domain import Document, InstructDataset
 
 

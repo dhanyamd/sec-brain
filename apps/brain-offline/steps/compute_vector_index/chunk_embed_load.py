@@ -151,7 +151,7 @@ def get_batches(docs: list[LangChainDocument], batch_size: int) -> Generator[lis
     for i in range(0, len(docs), batch_size): 
         yield docs[i: i + batch_size] 
 
-def process_batch(retriever: Any, batch: [LangChainDocument], splitter: RecursiveCharacterTextSplitter) -> None: 
+def process_batch(retriever: Any, batch: LangChainDocument, splitter: RecursiveCharacterTextSplitter) -> None: 
     """Ingest batches of documents into Mongodb by splitting and embedding 
     
     Args: 

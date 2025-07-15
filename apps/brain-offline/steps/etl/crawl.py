@@ -1,7 +1,7 @@
 from typing_extensions import Annotated
 from zenml import get_step_context, step
 
-from second_brain_offline.application.crawlers import Crawl4AICrawler
+from src.second_brain_offline.application.crawlers import Crawl4AICrawler
 from second_brain_offline.domain import Document
 
 @step

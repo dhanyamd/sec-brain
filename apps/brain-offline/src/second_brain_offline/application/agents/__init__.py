@@ -3,7 +3,7 @@ from .contextual_summarization import (
     SimpleSummarizationAgent,
 )
 from .quality import HeuristicQualityAgent, QualityScoreAgent
-from .contextual_summarization import SummarizationAgent
+from .summarisation import SummarizationAgent
 
 __all__ = [
     "SummarizationAgent",

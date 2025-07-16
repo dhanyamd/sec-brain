@@ -1,6 +1,6 @@
 from .contextual_summarization import (
     ContextualSummarizationAgent,
-    SimpleSummarizationAgent,
+    SimpleSummarizationAgent
 )
 from .quality import HeuristicQualityAgent, QualityScoreAgent
 from .summarisation import SummarizationAgent

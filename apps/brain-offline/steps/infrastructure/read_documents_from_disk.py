@@ -3,7 +3,7 @@ from pathlib import Path
 from typing_extensions import Annotated
 from zenml.steps import get_step_context, step
 
-from second_brain_offline.domain.document import Document
+from src.second_brain_offline.domain.document import Document
 
 @step 
 def read_documents_from_disk(

@@ -5,7 +5,7 @@ from src.second_brain_offline.application.agents.quality import (
     HeuristicQualityAgent,
     QualityScoreAgent,
 )
-from second_brain_offline.domain import Document 
+from src.second_brain_offline.domain import Document 
 
 @step 
 def add_quality_score(documents:list[Document], model_id: str = "gpt-4o-mini", mock: bool = False,

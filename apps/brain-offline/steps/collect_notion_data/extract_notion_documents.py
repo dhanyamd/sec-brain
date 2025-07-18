@@ -1,8 +1,8 @@
 from typing_extensions import Annotated
 from zenml import get_step_context, step
 
-from second_brain_offline.domain import Document, DocumentMetadata
-from second_brain_offline.infrastructure.notion import NotionDocumentClient
+from src.second_brain_offline.domain import Document, DocumentMetadata
+from src.second_brain_offline.infrastructure.notion import NotionDocumentClient
 
 @step 
 def extract_notion_documents(

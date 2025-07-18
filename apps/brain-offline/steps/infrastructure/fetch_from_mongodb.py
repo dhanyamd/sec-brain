@@ -1,8 +1,8 @@
 from typing_extensions import Annotated
 from zenml.steps import get_step_context, step
 
-from second_brain_offline.domain import Document
-from second_brain_offline.infrastructure.mongo import MongoDBService
+from src.second_brain_offline.domain import Document
+from src.second_brain_offline.infrastructure.mongo import MongoDBService
 
 @step 
 def fetch_from_mongodb(collection_name:str, limit: int) -> Annotated[list[dict], "documents"]: 

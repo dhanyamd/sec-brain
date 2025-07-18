@@ -2,7 +2,7 @@ from pydantic import BaseModel
 from typing_extensions import Annotated
 from zenml.steps import get_step_context, step
 
-from second_brain_offline.infrastructure.mongo.service import MongoDBService 
+from src.second_brain_offline.infrastructure.mongo.service import MongoDBService 
 
 @step 
 def ingest_to_mongodb(

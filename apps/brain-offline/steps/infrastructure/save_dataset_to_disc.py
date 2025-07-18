@@ -4,7 +4,7 @@ from pathlib import Path
 from typing_extensions import Annotated
 from zenml import get_step_context, step
 
-from second_brain_offline.domain import InstructDataset
+from src.second_brain_offline.domain import InstructDataset
 
 @step
 def save_dataset_to_disk(

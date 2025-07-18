@@ -4,7 +4,7 @@ from pathlib import Path
 from typing_extensions import Annotated
 from zenml import get_step_context, step
 
-from second_brain_offline.domain import Document
+from src.second_brain_offline.domain import Document
 @step 
 def save_documents_to_disc(
     documents: Annotated[list[Document], "document"],

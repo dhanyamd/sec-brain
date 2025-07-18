@@ -9,7 +9,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from tqdm import tqdm
 from zenml.steps import step
 
-from second_brain_offline.application.rag import (
+from src.second_brain_offline.application.rag import (
     EmbeddingModelType,
     SummarizationType,
     get_retriever,

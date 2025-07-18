@@ -1,8 +1,8 @@
 from typing_extensions import Annotated
 from zenml import get_step_context, step
 
-from second_brain_offline.config import settings
-from second_brain_offline.domain import InstructDataset
+from src.second_brain_offline.config import settings
+from src.second_brain_offline.domain import InstructDataset
 
 @step
 def push_to_huggingface(

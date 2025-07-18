@@ -1,7 +1,7 @@
 from typing_extensions import Annotated
 from zenml import get_step_context
 from zenml.steps import step
-from second_brain_offline.domain import Document 
+from src.second_brain_offline.domain import Document 
 
 @step 
 def filter_by_quality( 

@@ -1,8 +1,8 @@
 from typing_extensions import Annotated
 from zenml import get_step_context, step
 
-from second_brain_offline.domain import DocumentMetadata
-from second_brain_offline.infrastructure.notion import NotionDatabaseClient
+from src.second_brain_offline.domain import DocumentMetadata
+from src.second_brain_offline.infrastructure.notion import NotionDatabaseClient
 
 
 @step

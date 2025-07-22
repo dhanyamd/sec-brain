@@ -3,7 +3,7 @@ from pathlib import Path
 import click
 from smolagents import GradioUI
 
-from second_brain_online.application.agents import get_agent
+from src.second_brain_online.application.agents import get_agent
 
 
 @click.command()

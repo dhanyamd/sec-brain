@@ -3,7 +3,7 @@ from typing import List
 
 import click
 
-from second_brain_online.application.evaluation import evaluate_agent
+from src.second_brain_online.application.evaluation import evaluate_agent
 
 EVALUATION_PROMPTS: List[str] = [
     """

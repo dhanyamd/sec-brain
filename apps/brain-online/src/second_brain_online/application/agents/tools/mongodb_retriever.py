@@ -86,7 +86,7 @@ When using context from any document, also include the document URL as reference
 """
             return result
         except Exception:
-            printt(exception=True).debug("Error retrieving documents.")
+            print(exception=True).debug("Error retrieving documents.")
 
             return "Error retrieving documents."
 
